@@ -1,0 +1,20 @@
+{
+    "name": "sakib/database-crud-operations",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": {
+            "DatabaseCrudOperations\\": "includes/",
+            "DatabaseCrudOperations\\Admin\\": "includes/admin/"
+        },
+        "files": [ "includes/functions.php" ]
+    },
+    "authors": [
+        {
+            "name": "Sakib",
+            "email": "dev@nazmunsakib.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
