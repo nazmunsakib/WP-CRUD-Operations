@@ -92,14 +92,19 @@ class Students {
 
             $redirect = admin_url( 'admin.php?page=database-crud&action=edit&updated-student=true&id=' . $id );
        }else{
-            dco_insert_student(
-                array(
-                    'name'  => $name,
-                    'email' => $email,
-                )
-            );
 
-            $redirect = admin_url( 'admin.php?page=database-crud&added=true' );
+            if( empty( $name ) ){
+                $redirect = admin_url( 'admin.php?page=add-new-student&added=false' );
+            }else{
+                dco_insert_student(
+                    array(
+                        'name'  => $name,
+                        'email' => $email,
+                    )
+                );
+    
+                $redirect = admin_url( 'admin.php?page=database-crud&added=true' );
+            }
        }
 
         wp_redirect( $redirect );

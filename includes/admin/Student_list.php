@@ -136,7 +136,7 @@ class Student_List extends \WP_List_Table {
 
         $this->_column_headers = [ $column, $hidden, $sortable ];
 
-        $per_page     = 20;
+        $per_page     = 10;
         $current_page = $this->get_pagenum();
         $offset       = ( $current_page - 1 ) * $per_page;
 

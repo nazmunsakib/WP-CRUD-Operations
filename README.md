@@ -1,4 +1,4 @@
-# Post View Count
+# Database CRUD Operations
 
 - Contributor: [nazmunsakib](https://github.com/nazmunsakib/)
 - License: GPLv2 or later
@@ -6,25 +6,19 @@
 
 ## Description
 
-Display view count of your wordpress post.
+WordPress CRUD Operations. You can create update and delete all each student list, and paginate students item per page show 10 items 
 
 ## Installation
 
-You can install the Post View Count from your WordPress Dashboard or manually upload it through FTP.
+You can install the Database CRUD Operations from your WordPress Dashboard or manually upload it through FTP.
 
-#### OPTION 1: Install the Affiliate Product Review Plugin from WordPress Dashboard
+#### OPTION 1: Install the Database CRUD Operations from WordPress Dashboard
 
 - Navigate to Plugins -> Add New.
-- Upload the post-view-count.zip file.
+- Upload the database-crud-operations.zip file.
 - Activate the plugin in the Plugins menu.
 
 #### OPTION 2: Manually Upload Plugin Files
 
-- Upload the ‘post-view-count.zip’ file to your ‘/wp-content/plugins’ directory.
-- Unzip the file post-view-count.zip (do not rename the folder).
-
-Use the Shoercode with post ID in your post editor content area OR post loop.
-
-```bash
-[post_view_count post_id=1]
-```
+- Upload the ‘database-crud-operations.zip’ file to your ‘/wp-content/plugins’ directory.
+- Unzip the file database-crud-operations.zip (do not rename the folder).
