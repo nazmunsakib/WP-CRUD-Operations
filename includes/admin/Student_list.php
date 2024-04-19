@@ -40,6 +40,7 @@ class Student_List extends \WP_List_Table {
     public function get_columns() {
         return [
             'cb'    => '<input type="checkbox" />',
+            'id'    => __( 'ID', 'database-crud-operations' ),
             'name'  => __( 'Name', 'database-crud-operations' ),
             'email' => __( 'Email', 'database-crud-operations' ),
         ];
@@ -52,7 +53,8 @@ class Student_List extends \WP_List_Table {
      */
     function get_sortable_columns() {
         $sortable_columns = [
-            'name'       => [ 'name', true ],
+            'id'    => [ 'id', true ],
+            'name'  => [ 'name', true ],
         ];
 
         return $sortable_columns;
